@@ -8,7 +8,7 @@ const port = process.env.PORT || 5501
 app.use(cors());
 app.use(express.json());
 
-const uri = "mongodb+srv://anthony:Pole13579@cluster1.bvl6p.mongodb.net/shopify2022?retryWrites=true&w=majority";
+const uri = "mongodb+srv://user:password@cluster1.bvl6p.mongodb.net/databaseName?retryWrites=true&w=majority";
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 const connection = mongoose.connection;
 connection.once("open", () => {
