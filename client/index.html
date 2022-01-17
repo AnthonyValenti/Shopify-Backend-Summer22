@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<header>
+    <h1 > Inventory Management System <h1>
+</header>
+<body >
+    <button id="editBtn"> Edit </button>
+    <button id="deleteBtn"> Delete </button>
+    <button id="addBtn"> Add </button>
+    <button id="export">Export CSV </button>
+
+<div class ="tableWrapper">
+<table class="table table-bordered table-dark" id="myTable">
+  <thead>
+    <tr>
+      <th scope="col"><input type="checkbox" id="selectAll" onclick="colSelect();"></input></th>
+      <th scope="col">Serial #</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Price($) </th>
+      <th scope="col">Stock </th>
+
+    </tr>
+  </thead>
+  <tbody id="tbody">
+    
+
+  </tbody>
+</table>
+</div>
+<div id="addItemWrapper">
+  <input type="text" id="addSerial" placeholder="Serial #"></input>
+  <input type="text" id="addName" placeholder="Product Name"></input>
+  <input type="text" id="addPrice" placeholder="Price"></input>
+  <input type="text" id="addStock" placeholder="Stock"></input>
+  <button type="button" class="btn btn-success" id="confirmBtn">Confirm</button>
+  <button type="button" class="btn btn-danger" id="cancelAddBtn">Cancel Add</button>
+</div>
+
+<div id="editItemWrapper">
+  <input type="text" id="editSerial" placeholder="Serial #"></input>
+  <input type="text" id="editName" placeholder="Product Name"></input>
+  <input type="text" id="editPrice" placeholder="Price"></input>
+  <input type="text" id="editStock" placeholder="Stock"></input>
+  <button type="button" class="btn btn-success" id="confirmEditBtn">Confirm Edit</button>
+  <button type="button" class="btn btn-danger" id="cancelEditBtn">Cancel Edit</button>
+
+</div>
+
+
+
+
+
+
+</body>
+<script src="./app.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</html>
