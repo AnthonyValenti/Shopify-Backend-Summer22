@@ -1,18 +1,10 @@
 {
-  "name": "Spoitfy-Backend-Summer2022",
-  "version": "1.0.0",
-  "description": "Spotify project",
-  "main": "app.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "author": "Anthony Valenti",
-  "license": "ISC",
   "dependencies": {
+    "axios": "^0.24.0",
     "cors": "^2.8.5",
-    "dotenv": "^11.0.0",
+    "dotenv": "^14.1.1",
     "express": "^4.17.2",
-    "mongoose": "^6.1.6"
+    "mongoose": "^6.1.7",
+    "node": "^17.3.1"
   }
 }
-

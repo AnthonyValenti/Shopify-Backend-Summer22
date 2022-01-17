@@ -19,5 +19,5 @@ const inventoryRouter = require("./inventoryRouter");
 app.use('/inventory',inventoryRouter);
 
 app.listen(port, ()=>{
-    console.log(`lsitening on ${port}`); 
+    console.log(`Listening on ${port}`); 
 });
